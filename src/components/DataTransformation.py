@@ -13,7 +13,7 @@ import os
 
 @dataclass
 class DataTransformationConfig:
-    preprocessor_obj_file_path=os.path.join('artefacts', "preprocessor.pkl")
+    preprocessor_obj_file_path=os.path.join('artifacts', "preprocessor.pkl")
 
 class DataTransformation:
     def __init__(self):
