@@ -49,32 +49,29 @@ Each model was tuned using a grid of hyperparameters. The model with the highest
 ## 🧱 Project Structure
 
 student-performance-prediction/
-│
-├── app.py                        # Main Flask app for web deployment
-├── setup.py                      # Package configuration
-├── requirements.txt              # Python dependencies
-├── README.md                     # Project documentation
-│
-├── templates/                    # HTML templates for the frontend
-│   ├── index.html                # Landing page
-│   └── home.html                 # Form for input and results display
-│
-├── src/
-│   ├── components/               # Core ML modules: ingestion, transformation, training
+├── app.py                       # Main Flask app for deployment
+├── setup.py                    # Package setup script
+├── requirements.txt            # Python dependencies
+├── README.md                   # Project documentation
+
+├── templates/                  # HTML templates for the frontend
+│   ├── index.html              # Landing page
+│   └── home.html               # Form for input and result display
+
+├── src/                        # Source code
+│   ├── components/             # Core ML pipeline modules
 │   │   ├── data_ingestion.py
 │   │   ├── data_transformation.py
 │   │   ├── model_trainer.py
 │   │   └── model_evaluation.py
-│   │
-│   ├── pipeline/                 # Orchestrates training and prediction workflows
+│   ├── pipeline/               # Training and prediction pipelines
 │   │   ├── train_pipeline.py
 │   │   └── predict_pipeline.py
-│   │
-│   ├── utils.py                  # Helper functions
-│   └── exception.py              # Custom exceptions
-│
-├── artifacts/                    # Stores trained model, preprocessor, and other outputs
-├── logs/                         # Application and error logs
-│
-├── notebooks/                    # EDA and experimentation notebooks
+│   ├── utils.py                # Utility functions
+│   └── exception.py            # Custom exception handling
+
+├── artifacts/                  # Saved models, transformers, etc.
+├── logs/                       # Log files for monitoring and debugging
+
+├── notebooks/                  # Jupyter notebooks for EDA and experimentation
 │   └── eda.ipynb
