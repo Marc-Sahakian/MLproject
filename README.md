@@ -41,8 +41,8 @@ Each model was tuned using a grid of hyperparameters. The model with the highest
 
 ## 📈 Best Model Performance
 
-- ✅ **Best Model:** *[Insert model, e.g., Random Forest Regressor]*  
-- 📊 **R² Score (Test):** *[Insert score, e.g., 0.89]*  
+- ✅ **Best Model:** Linear regression
+- 📊 **R² Score (Test):** 0.88
 
 ---
 
